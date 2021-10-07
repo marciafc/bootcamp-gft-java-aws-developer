@@ -37,8 +37,21 @@
       - [FuncaoComLambda](src/main/java/br/com/marcia/aula1/FuncaoComLambda.java) 
     
   - Recursividade
-    <img src="explicacao-recursividade.png">
-      
+    
+    - [FatorialRecursivo.java](src/main/java/br/com/marcia/aula1/FatorialRecursivo/FatorialRecursivo.java)
+      - Empilha as chamadas e depois desempilha
+      <img src="images/explicacao-recursividade.png">
+
+    - Tail Call (recursividade em causa): [FatorialTailCall.java](src/main/java/br/com/marcia/aula1/FatorialRecursivo/FatorialTailCall.java)
+      - Já vai resolvendo a recursão, armazenando o resultado em uma variável temp
+      - Trabalha com uma cópia dos valores para fazer o processamento
+      - Nenhum tipo de processamento a ser feito após a chamada recursiva
+      - A JVM não suporta a recursão em cauda e lança estouro de pilha (StackOverFlow) 
+      <img src="images/explicacao-tail-call.png">
+    
+   - Memorization: [FatorialMemoization.java](src/main/java/br/com/marcia/aula1/FatorialMemoization.java)
+    - Técnica de otimização que consiste no cache do resultado de uma função, baseada nos parâmetros de entrada
+    - Cache fica armazenado em um Map estático     
     
 
 ## Referência
