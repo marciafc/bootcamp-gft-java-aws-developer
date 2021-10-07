@@ -99,6 +99,15 @@
     - não recebe parâmetro, retorna algo
       - Supplier<Pessoa> instanciaPessoa
 
+  - Iterações: [Iteracoes.java](src/main/java/br/com/marcia/aula2/Iteracoes.java)
+    - Stream.of
+    - Collectors.joining
+    - filter      
+    - forEach
+    - map
+    - stream
+
+
 ## Referência
 
   - [Instrutor João Paulo Santos - Gitlab](https://github.com/jpbaterabsb/java-avancado)
