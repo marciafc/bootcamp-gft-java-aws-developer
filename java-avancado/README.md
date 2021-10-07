@@ -49,7 +49,7 @@
       - A JVM não suporta a recursão em cauda e lança estouro de pilha (StackOverFlow) 
       <img src="images/explicacao-tail-call.png">
     
-   - Memorization: [FatorialMemoization.java](src/main/java/br/com/marcia/aula1/FatorialMemoization.java)
+   - Memorization: [FatorialMemorization.java](src/main/java/br/com/marcia/aula1/FatorialMemorization.java)
     - Técnica de otimização que consiste no cache do resultado de uma função, baseada nos parâmetros de entrada
     - Cache fica armazenado em um Map estático     
     
