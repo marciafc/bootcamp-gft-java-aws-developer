@@ -42,16 +42,16 @@
       - Empilha as chamadas e depois desempilha
       <img src="images/explicacao-recursividade.png">
 
-    - Tail Call (recursividade em causa): [FatorialTailCall.java](src/main/java/br/com/marcia/aula1/FatorialRecursivo/FatorialTailCall.java)
+    - Tail Call (recursividade em cauda): [FatorialTailCall.java](src/main/java/br/com/marcia/aula1/FatorialRecursivo/FatorialTailCall.java)
       - Já vai resolvendo a recursão, armazenando o resultado em uma variável temp
       - Trabalha com uma cópia dos valores para fazer o processamento
       - Nenhum tipo de processamento a ser feito após a chamada recursiva
       - A JVM não suporta a recursão em cauda e lança estouro de pilha (StackOverFlow) 
       <img src="images/explicacao-tail-call.png">
     
-   - Memorization: [FatorialMemorization.java](src/main/java/br/com/marcia/aula1/FatorialMemorization.java)
-    - Técnica de otimização que consiste no cache do resultado de uma função, baseada nos parâmetros de entrada
-    - Cache fica armazenado em um Map estático     
+    - Memorization: [FatorialMemorization.java](src/main/java/br/com/marcia/aula1/FatorialMemorization.java)
+      - Técnica de otimização que consiste no cache do resultado de uma função, baseada nos parâmetros de entrada
+      - Cache fica armazenado em um Map estático     
     
 ## Interfaces funcionais
 
@@ -107,7 +107,12 @@
     - map
     - stream
 
+  - Processamento Assíncrono e Paralelo: [ThreadExemplo.java](src/main/java/br/com/marcia/aula3/ThreadExemplo.java)
+    
+    -  Execução da API no Java 8 - [FutureExemplo.java](src/main/java/br/com/marcia/aula3/FutureExemplo.java)
 
+    - Parallel Stream -  [ParallelStreamExemplo.java](src/main/java/br/com/marcia/aula3/ParallelStreamExemplo.java)
+       
 ## Referência
 
   - [Instrutor João Paulo Santos - Gitlab](https://github.com/jpbaterabsb/java-avancado)
