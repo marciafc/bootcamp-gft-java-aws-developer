@@ -107,12 +107,53 @@
     - map
     - stream
 
-  - Processamento Assíncrono e Paralelo: [ThreadExemplo.java](src/main/java/br/com/marcia/aula3/ThreadExemplo.java)
+## Processamento Assíncrono e Paralelo: [ThreadExemplo.java](src/main/java/br/com/marcia/aula3/ThreadExemplo.java)
     
-    -  Execução da API no Java 8 - [FutureExemplo.java](src/main/java/br/com/marcia/aula3/FutureExemplo.java)
+  -  Execução da API no Java 8 - [FutureExemplo.java](src/main/java/br/com/marcia/aula3/FutureExemplo.java)
 
-    - Parallel Stream -  [ParallelStreamExemplo.java](src/main/java/br/com/marcia/aula3/ParallelStreamExemplo.java)
-       
+  - Parallel Stream -  [ParallelStreamExemplo.java](src/main/java/br/com/marcia/aula3/ParallelStreamExemplo.java)
+    
+## Modularização do Java - [jigsaw-examples](https://github.com/java-modularity-examples/jigsaw-examples)
+    
+  - Java 9
+    - Exemplo de classe do Java: [The Unsafe Class: Unsafe at Any Speed](https://blogs.oracle.com/javamagazine/post/the-unsafe-class-unsafe-at-any-speed)
+      
+  - Jigsaw
+    - Restringir acessos
+
+  - Modularizando a app
+      
+    1) Criar módulos no IntelliJ => 'File \ New \ Module'
+        
+    2) Cada módulo deverá ter um arquivo module-info.java => 'botão direito na pasta src do módulo \ module-info.java'
+        
+    3) Usar 'exports' ou 'requires' no arquivo module-info.java para exportar o módulo ou importar outros módulos
+
+  - A partir do JDK 9, quando incluímos um arquivo module-info.java os únicos tipos acessíveis para utilização são exportados pelo módulo java.base, que contém tipos definidos nos pacotes 
+    - java.lang
+    - java.util, 
+    - java.nio, 
+    - java.time e [alguns outros](http://cr.openjdk.java.net/~mr/jigsaw/ea/module-summary.html)
+    
+  - Listar os módulos do Java 
+      
+    ```
+    $ java --list-modules
+    
+    java.base@11.0.11
+    java.compiler@11.0.11
+    java.datatransfer@11.0.11
+    java.desktop@11.0.11
+    java.instrument@11.0.11
+    java.logging@11.0.11
+    //...    
+    ```
+    
+  - [Modularidade com Java 9 — Parte 1](https://medium.com/@luksrn/modularidade-com-java-9-parte-1-d59ed346ba90)    
+    
+  - [Modularidade com Java 9 — Parte 2](https://medium.com/@luksrn/modularidade-com-java-9-parte-2-90b2bd262cf1)
+
+
 ## Referência
 
   - [Instrutor João Paulo Santos - Gitlab](https://github.com/jpbaterabsb/java-avancado)
